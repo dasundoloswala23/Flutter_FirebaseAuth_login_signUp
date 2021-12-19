@@ -1,4 +1,4 @@
-# login
+# Flutter & FirebaseAuth Login and SignUp
 
 A new Flutter project.
 

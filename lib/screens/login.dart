@@ -8,6 +8,7 @@ import 'package:login/screens/home_screen.dart';
 import 'package:login/screens/registration.dart';
 
 class LoginScreen  extends StatefulWidget {
+
   const LoginScreen ({Key? key}) : super(key: key);
 
   @override
@@ -101,8 +102,6 @@ class _LoginScreenState extends State <LoginScreen> {
       minWidth: MediaQuery.of(context).size.width,
       onPressed: (){
         signIn(emailController.text, passwordController.text);
-
-
       },
       child: Text(
         "Login",

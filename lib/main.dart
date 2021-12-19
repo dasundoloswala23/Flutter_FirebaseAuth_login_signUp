@@ -3,13 +3,17 @@ import 'package:flutter/material.dart';
 import 'package:login/screens/login.dart';
 
  Future <void> main() async {
+
    WidgetsFlutterBinding.ensureInitialized();
    await Firebase.initializeApp();
 
-  runApp(MyApp());
+  runApp(MyApp(
+  ));
+
 }
 
 class MyApp extends StatelessWidget {
+
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
@@ -18,6 +22,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.red,
       ),
+      debugShowCheckedModeBanner: false,
       home:  LoginScreen(),
     );
   }
